@@ -50,11 +50,12 @@
             btn0 = new Button();
             btnReciprocal = new Button();
             btnEquals = new Button();
+            txtEquation = new TextBox();
             SuspendLayout();
             // 
             // txtOutput
             // 
-            txtOutput.Location = new Point(12, 25);
+            txtOutput.Location = new Point(12, 38);
             txtOutput.MaxLength = 32;
             txtOutput.Name = "txtOutput";
             txtOutput.ReadOnly = true;
@@ -315,12 +316,24 @@
             btnEquals.UseVisualStyleBackColor = true;
             btnEquals.Click += btnEquals_Click;
             // 
+            // txtEquation
+            // 
+            txtEquation.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEquation.Location = new Point(12, 12);
+            txtEquation.MaxLength = 32;
+            txtEquation.Name = "txtEquation";
+            txtEquation.ReadOnly = true;
+            txtEquation.Size = new Size(199, 22);
+            txtEquation.TabIndex = 22;
+            txtEquation.TextAlign = HorizontalAlignment.Right;
+            // 
             // frmCalculator
             // 
             AcceptButton = btnEquals;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(228, 274);
+            Controls.Add(txtEquation);
             Controls.Add(btnEquals);
             Controls.Add(btnReciprocal);
             Controls.Add(btnDecimal);
@@ -375,5 +388,6 @@
         private Button btn0;
         private Button btnReciprocal;
         private Button btnEquals;
+        private TextBox txtEquation;
     }
 }
