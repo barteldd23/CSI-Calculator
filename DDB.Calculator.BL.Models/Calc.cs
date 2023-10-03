@@ -133,7 +133,5 @@ namespace DDB.Calculator.BL.Models
             
             return "Err";
         }
-
-
     }
 }

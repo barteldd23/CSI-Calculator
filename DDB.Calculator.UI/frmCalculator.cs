@@ -450,7 +450,5 @@ namespace DDB.Calculator.UI
 
         #endregion
 
-
-
     }
 }
