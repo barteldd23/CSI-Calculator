@@ -1,6 +1,16 @@
 using DDB.Calculator.BL.Models;
 
 
+/*
+ *      Dean Bartel
+ *      2 Oct 2023
+ *      C# Intermediate
+ *      Project #3 - Calculator
+ *      V1 - Mostly working, but some issues.
+ *      typing "2+3=13-4" not working as expected.
+ * 
+ */
+
 namespace DDB.Calculator.UI
 {
     public partial class frmCalculator : Form
